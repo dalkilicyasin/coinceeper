@@ -8,14 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		D91A59B22C96F07400F194F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A59B12C96F07400F194F3 /* AppDelegate.swift */; };
-		D91A59B42C96F07400F194F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A59B32C96F07400F194F3 /* SceneDelegate.swift */; };
-		D91A59B62C96F07400F194F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A59B52C96F07400F194F3 /* ViewController.swift */; };
 		D91A59B92C96F07400F194F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91A59B72C96F07400F194F3 /* Main.storyboard */; };
 		D91A59BB2C96F07600F194F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D91A59BA2C96F07600F194F3 /* Assets.xcassets */; };
 		D91A59BE2C96F07600F194F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D91A59BC2C96F07600F194F3 /* LaunchScreen.storyboard */; };
 		D91A59C92C96F07600F194F3 /* coinceeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A59C82C96F07600F194F3 /* coinceeperTests.swift */; };
 		D91A59D32C96F07600F194F3 /* coinceeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A59D22C96F07600F194F3 /* coinceeperUITests.swift */; };
 		D91A59D52C96F07600F194F3 /* coinceeperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A59D42C96F07600F194F3 /* coinceeperUITestsLaunchTests.swift */; };
+		D91A59E32C96FF5600F194F3 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A59E22C96FF5600F194F3 /* Storyboarded.swift */; };
+		D91A59E52C97081400F194F3 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A59E42C97081400F194F3 /* Coordinator.swift */; };
+		D91A59E92C9709E700F194F3 /* TabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A59E82C9709E700F194F3 /* TabbarViewController.swift */; };
+		D91A59F02C970B4D00F194F3 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A59EF2C970B4D00F194F3 /* WalletViewController.swift */; };
+		D91A59F22C970B5A00F194F3 /* WalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A59F12C970B5A00F194F3 /* WalletViewModel.swift */; };
+		D91A59F42C970B6500F194F3 /* WalletCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A59F32C970B6500F194F3 /* WalletCoordinator.swift */; };
+		D91A59F62C970B8800F194F3 /* SwapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A59F52C970B8800F194F3 /* SwapViewController.swift */; };
+		D91A59F82C970B9300F194F3 /* SwapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A59F72C970B9300F194F3 /* SwapViewModel.swift */; };
+		D91A59FA2C970B9E00F194F3 /* SwapCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A59F92C970B9E00F194F3 /* SwapCoordinator.swift */; };
+		D91A59FC2C970BAD00F194F3 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A59FB2C970BAD00F194F3 /* ScanViewController.swift */; };
+		D91A59FE2C970BB700F194F3 /* ScanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A59FD2C970BB700F194F3 /* ScanViewModel.swift */; };
+		D91A5A002C970BC400F194F3 /* ScanCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A59FF2C970BC400F194F3 /* ScanCoordinator.swift */; };
+		D91A5A022C970BD600F194F3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A5A012C970BD600F194F3 /* SettingsViewController.swift */; };
+		D91A5A042C970BE900F194F3 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A5A032C970BE900F194F3 /* SettingsViewModel.swift */; };
+		D91A5A062C970BF800F194F3 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A5A052C970BF800F194F3 /* SettingsCoordinator.swift */; };
+		D91A5A092C9717F400F194F3 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A5A082C9717F400F194F3 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +52,6 @@
 /* Begin PBXFileReference section */
 		D91A59AE2C96F07400F194F3 /* coinceeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coinceeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91A59B12C96F07400F194F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D91A59B32C96F07400F194F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D91A59B52C96F07400F194F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D91A59B82C96F07400F194F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D91A59BA2C96F07600F194F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D91A59BD2C96F07600F194F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +61,22 @@
 		D91A59CE2C96F07600F194F3 /* coinceeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coinceeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D91A59D22C96F07600F194F3 /* coinceeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coinceeperUITests.swift; sourceTree = "<group>"; };
 		D91A59D42C96F07600F194F3 /* coinceeperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coinceeperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D91A59E22C96FF5600F194F3 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		D91A59E42C97081400F194F3 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		D91A59E82C9709E700F194F3 /* TabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarViewController.swift; sourceTree = "<group>"; };
+		D91A59EF2C970B4D00F194F3 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
+		D91A59F12C970B5A00F194F3 /* WalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewModel.swift; sourceTree = "<group>"; };
+		D91A59F32C970B6500F194F3 /* WalletCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCoordinator.swift; sourceTree = "<group>"; };
+		D91A59F52C970B8800F194F3 /* SwapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapViewController.swift; sourceTree = "<group>"; };
+		D91A59F72C970B9300F194F3 /* SwapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapViewModel.swift; sourceTree = "<group>"; };
+		D91A59F92C970B9E00F194F3 /* SwapCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapCoordinator.swift; sourceTree = "<group>"; };
+		D91A59FB2C970BAD00F194F3 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		D91A59FD2C970BB700F194F3 /* ScanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewModel.swift; sourceTree = "<group>"; };
+		D91A59FF2C970BC400F194F3 /* ScanCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanCoordinator.swift; sourceTree = "<group>"; };
+		D91A5A012C970BD600F194F3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D91A5A032C970BE900F194F3 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		D91A5A052C970BF800F194F3 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		D91A5A082C9717F400F194F3 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +127,11 @@
 		D91A59B02C96F07400F194F3 /* coinceeper */ = {
 			isa = PBXGroup;
 			children = (
+				D91A5A072C9717E300F194F3 /* Extentions */,
+				D91A59EA2C970B0F00F194F3 /* Scenes */,
+				D91A59E12C96F41800F194F3 /* Protocols */,
 				D91A59B12C96F07400F194F3 /* AppDelegate.swift */,
-				D91A59B32C96F07400F194F3 /* SceneDelegate.swift */,
-				D91A59B52C96F07400F194F3 /* ViewController.swift */,
+				D91A59E82C9709E700F194F3 /* TabbarViewController.swift */,
 				D91A59B72C96F07400F194F3 /* Main.storyboard */,
 				D91A59BA2C96F07600F194F3 /* Assets.xcassets */,
 				D91A59BC2C96F07600F194F3 /* LaunchScreen.storyboard */,
@@ -125,6 +155,74 @@
 				D91A59D42C96F07600F194F3 /* coinceeperUITestsLaunchTests.swift */,
 			);
 			path = coinceeperUITests;
+			sourceTree = "<group>";
+		};
+		D91A59E12C96F41800F194F3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D91A59E22C96FF5600F194F3 /* Storyboarded.swift */,
+				D91A59E42C97081400F194F3 /* Coordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D91A59EA2C970B0F00F194F3 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D91A59EE2C970B3E00F194F3 /* Settings */,
+				D91A59ED2C970B3000F194F3 /* Scan */,
+				D91A59EC2C970B2700F194F3 /* Swap */,
+				D91A59EB2C970B1D00F194F3 /* Wallet */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		D91A59EB2C970B1D00F194F3 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				D91A59EF2C970B4D00F194F3 /* WalletViewController.swift */,
+				D91A59F12C970B5A00F194F3 /* WalletViewModel.swift */,
+				D91A59F32C970B6500F194F3 /* WalletCoordinator.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		D91A59EC2C970B2700F194F3 /* Swap */ = {
+			isa = PBXGroup;
+			children = (
+				D91A59F52C970B8800F194F3 /* SwapViewController.swift */,
+				D91A59F72C970B9300F194F3 /* SwapViewModel.swift */,
+				D91A59F92C970B9E00F194F3 /* SwapCoordinator.swift */,
+			);
+			path = Swap;
+			sourceTree = "<group>";
+		};
+		D91A59ED2C970B3000F194F3 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				D91A59FB2C970BAD00F194F3 /* ScanViewController.swift */,
+				D91A59FD2C970BB700F194F3 /* ScanViewModel.swift */,
+				D91A59FF2C970BC400F194F3 /* ScanCoordinator.swift */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		D91A59EE2C970B3E00F194F3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D91A5A012C970BD600F194F3 /* SettingsViewController.swift */,
+				D91A5A032C970BE900F194F3 /* SettingsViewModel.swift */,
+				D91A5A052C970BF800F194F3 /* SettingsCoordinator.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		D91A5A072C9717E300F194F3 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				D91A5A082C9717F400F194F3 /* UIColor.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +356,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D91A59B62C96F07400F194F3 /* ViewController.swift in Sources */,
+				D91A59E52C97081400F194F3 /* Coordinator.swift in Sources */,
 				D91A59B22C96F07400F194F3 /* AppDelegate.swift in Sources */,
-				D91A59B42C96F07400F194F3 /* SceneDelegate.swift in Sources */,
+				D91A59E92C9709E700F194F3 /* TabbarViewController.swift in Sources */,
+				D91A59FC2C970BAD00F194F3 /* ScanViewController.swift in Sources */,
+				D91A59F82C970B9300F194F3 /* SwapViewModel.swift in Sources */,
+				D91A59F22C970B5A00F194F3 /* WalletViewModel.swift in Sources */,
+				D91A5A092C9717F400F194F3 /* UIColor.swift in Sources */,
+				D91A59FA2C970B9E00F194F3 /* SwapCoordinator.swift in Sources */,
+				D91A59FE2C970BB700F194F3 /* ScanViewModel.swift in Sources */,
+				D91A5A002C970BC400F194F3 /* ScanCoordinator.swift in Sources */,
+				D91A5A062C970BF800F194F3 /* SettingsCoordinator.swift in Sources */,
+				D91A5A022C970BD600F194F3 /* SettingsViewController.swift in Sources */,
+				D91A59E32C96FF5600F194F3 /* Storyboarded.swift in Sources */,
+				D91A59F62C970B8800F194F3 /* SwapViewController.swift in Sources */,
+				D91A59F02C970B4D00F194F3 /* WalletViewController.swift in Sources */,
+				D91A5A042C970BE900F194F3 /* SettingsViewModel.swift in Sources */,
+				D91A59F42C970B6500F194F3 /* WalletCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
