@@ -9,6 +9,13 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    private lazy var networkManager: NetworkManager = {
+            let config = NetworkConfig(baseURL: URL(string: "https://ydkulgwkxfxrkghcsdsk.supabase.co")!)
+            return NetworkManager(config: config)
+        }()
+    
+    var splashCoordinator: SplashCoordinator?
 
     var window: UIWindow?
     
@@ -17,7 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Coordinator init
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = TabbarViewController()
+        self.splashCoordinator = SplashCoordinator(navigationController: UINavigationController(), networkManager: networkManager)
+        self.window?.rootViewController = SplashViewController()
         self.window?.makeKeyAndVisible()
         
         return true

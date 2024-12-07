@@ -1,5 +1,5 @@
 //
-//  WalletCoordinator.swift
+//  SettingsCoordinator.swift
 //  coinceeper
 //
 //  Created by yasin on 15.09.2024.
@@ -8,31 +8,31 @@
 import Foundation
 import UIKit
 
-enum WalletRoute {
-    case toRoute
+enum SplashRoute {
+    case toDetail
 }
 
-class WalletCoordinator: Coordinator {
-    var navigationController: UINavigationController
+class SplashCoordinator: Coordinator {
+    typealias T = SplashRoute
     var networkManager: NetworkManager
+    var navigationController: UINavigationController
     
     init(navigationController: UINavigationController, networkManager: NetworkManager) {
         self.navigationController = navigationController
         self.networkManager = networkManager
     }
     
-    typealias T = WalletRoute
-    
     var childCoordinators: [any Coordinator] = []
     
     func start() {
-        let controller = WalletViewController.instantiate(name: .main)
+        let controller = SplashViewController.instantiate(name: .splash)
         controller.coordinator = self
         self.navigationController.setViewControllers([controller], animated: false)
     }
     
-    func navigateTo(to route: WalletRoute, data: Any?) {
-        // TODO: will add navigate
+    func navigateTo(to route: SplashRoute, data: Any?) {
+        //
     }
+    
     
 }

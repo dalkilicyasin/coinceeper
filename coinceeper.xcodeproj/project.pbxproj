@@ -30,6 +30,24 @@
 		D91A5A042C970BE900F194F3 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A5A032C970BE900F194F3 /* SettingsViewModel.swift */; };
 		D91A5A062C970BF800F194F3 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A5A052C970BF800F194F3 /* SettingsCoordinator.swift */; };
 		D91A5A092C9717F400F194F3 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A5A082C9717F400F194F3 /* UIColor.swift */; };
+		D9B202182D04B5BD0086A0EA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202172D04B5BD0086A0EA /* NetworkManager.swift */; };
+		D9B2021A2D04B6160086A0EA /* NetworkProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202192D04B6160086A0EA /* NetworkProtocols.swift */; };
+		D9B202202D04B6680086A0EA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D9B2021F2D04B6680086A0EA /* Alamofire */; };
+		D9B202222D04B66D0086A0EA /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D9B202212D04B66D0086A0EA /* SnapKit */; };
+		D9B202242D04B6720086A0EA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D9B202232D04B6720086A0EA /* Kingfisher */; };
+		D9B202262D04B7F80086A0EA /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202252D04B7F80086A0EA /* Endpoint.swift */; };
+		D9B202282D04B8AA0086A0EA /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202272D04B8AA0086A0EA /* NetworkConfig.swift */; };
+		D9B2022C2D04BB010086A0EA /* CustomExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2022B2D04BB010086A0EA /* CustomExtensions.swift */; };
+		D9B202312D04D52A0086A0EA /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2022F2D04D52A0086A0EA /* SplashCoordinator.swift */; };
+		D9B202322D04D52A0086A0EA /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2022D2D04D52A0086A0EA /* SplashViewController.swift */; };
+		D9B202332D04D52A0086A0EA /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2022E2D04D52A0086A0EA /* SplashViewModel.swift */; };
+		D9B202352D04DB280086A0EA /* StoryboardNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202342D04DB280086A0EA /* StoryboardNames.swift */; };
+		D9B202372D04DB9B0086A0EA /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9B202362D04DB9B0086A0EA /* Splash.storyboard */; };
+		D9B2023D2D04DDEF0086A0EA /* SplashNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2023C2D04DDEF0086A0EA /* SplashNetworkService.swift */; };
+		D9B2023F2D04DECA0086A0EA /* SplashEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2023E2D04DECA0086A0EA /* SplashEndpoints.swift */; };
+		D9B202412D04DF340086A0EA /* ImportWalletRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202402D04DF340086A0EA /* ImportWalletRequestModel.swift */; };
+		D9B202432D04DFAE0086A0EA /* CreateWalletRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202422D04DFAE0086A0EA /* CreateWalletRequestModel.swift */; };
+		D9B202452D04E2B40086A0EA /* SplashRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202442D04E2B40086A0EA /* SplashRepositories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +95,21 @@
 		D91A5A032C970BE900F194F3 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		D91A5A052C970BF800F194F3 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		D91A5A082C9717F400F194F3 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		D9B202172D04B5BD0086A0EA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D9B202192D04B6160086A0EA /* NetworkProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocols.swift; sourceTree = "<group>"; };
+		D9B202252D04B7F80086A0EA /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		D9B202272D04B8AA0086A0EA /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		D9B2022B2D04BB010086A0EA /* CustomExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomExtensions.swift; sourceTree = "<group>"; };
+		D9B2022D2D04D52A0086A0EA /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		D9B2022E2D04D52A0086A0EA /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		D9B2022F2D04D52A0086A0EA /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
+		D9B202342D04DB280086A0EA /* StoryboardNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardNames.swift; sourceTree = "<group>"; };
+		D9B202362D04DB9B0086A0EA /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		D9B2023C2D04DDEF0086A0EA /* SplashNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashNetworkService.swift; sourceTree = "<group>"; };
+		D9B2023E2D04DECA0086A0EA /* SplashEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashEndpoints.swift; sourceTree = "<group>"; };
+		D9B202402D04DF340086A0EA /* ImportWalletRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportWalletRequestModel.swift; sourceTree = "<group>"; };
+		D9B202422D04DFAE0086A0EA /* CreateWalletRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletRequestModel.swift; sourceTree = "<group>"; };
+		D9B202442D04E2B40086A0EA /* SplashRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRepositories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +117,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9B202242D04B6720086A0EA /* Kingfisher in Frameworks */,
+				D9B202202D04B6680086A0EA /* Alamofire in Frameworks */,
+				D9B202222D04B66D0086A0EA /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +146,7 @@
 				D91A59B02C96F07400F194F3 /* coinceeper */,
 				D91A59C72C96F07600F194F3 /* coinceeperTests */,
 				D91A59D12C96F07600F194F3 /* coinceeperUITests */,
+				D9B2021E2D04B6680086A0EA /* Frameworks */,
 				D91A59AF2C96F07400F194F3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,11 +164,18 @@
 		D91A59B02C96F07400F194F3 /* coinceeper */ = {
 			isa = PBXGroup;
 			children = (
+				D9B202382D04DCA20086A0EA /* NetworkServices */,
+				D9B2023B2D04DCBB0086A0EA /* Repositories */,
+				D9B2023A2D04DCB20086A0EA /* Models */,
+				D9B202392D04DCA90086A0EA /* Endpoints */,
+				D9B2022A2D04BADB0086A0EA /* Extensions */,
+				D9B202162D04B5840086A0EA /* Network */,
 				D91A5A072C9717E300F194F3 /* Extentions */,
 				D91A59EA2C970B0F00F194F3 /* Scenes */,
 				D91A59E12C96F41800F194F3 /* Protocols */,
 				D91A59B12C96F07400F194F3 /* AppDelegate.swift */,
 				D91A59E82C9709E700F194F3 /* TabbarViewController.swift */,
+				D9B202342D04DB280086A0EA /* StoryboardNames.swift */,
 				D91A59B72C96F07400F194F3 /* Main.storyboard */,
 				D91A59BA2C96F07600F194F3 /* Assets.xcassets */,
 				D91A59BC2C96F07600F194F3 /* LaunchScreen.storyboard */,
@@ -169,6 +213,7 @@
 		D91A59EA2C970B0F00F194F3 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				D9B202302D04D52A0086A0EA /* Splash */,
 				D91A59EE2C970B3E00F194F3 /* Settings */,
 				D91A59ED2C970B3000F194F3 /* Scan */,
 				D91A59EC2C970B2700F194F3 /* Swap */,
@@ -223,6 +268,76 @@
 				D91A5A082C9717F400F194F3 /* UIColor.swift */,
 			);
 			path = Extentions;
+			sourceTree = "<group>";
+		};
+		D9B202162D04B5840086A0EA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D9B202172D04B5BD0086A0EA /* NetworkManager.swift */,
+				D9B202192D04B6160086A0EA /* NetworkProtocols.swift */,
+				D9B202252D04B7F80086A0EA /* Endpoint.swift */,
+				D9B202272D04B8AA0086A0EA /* NetworkConfig.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D9B2021E2D04B6680086A0EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9B2022A2D04BADB0086A0EA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D9B2022B2D04BB010086A0EA /* CustomExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D9B202302D04D52A0086A0EA /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				D9B2022D2D04D52A0086A0EA /* SplashViewController.swift */,
+				D9B2022E2D04D52A0086A0EA /* SplashViewModel.swift */,
+				D9B2022F2D04D52A0086A0EA /* SplashCoordinator.swift */,
+				D9B202362D04DB9B0086A0EA /* Splash.storyboard */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		D9B202382D04DCA20086A0EA /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				D9B2023C2D04DDEF0086A0EA /* SplashNetworkService.swift */,
+			);
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
+		D9B202392D04DCA90086A0EA /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				D9B2023E2D04DECA0086A0EA /* SplashEndpoints.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		D9B2023A2D04DCB20086A0EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9B202402D04DF340086A0EA /* ImportWalletRequestModel.swift */,
+				D9B202422D04DFAE0086A0EA /* CreateWalletRequestModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D9B2023B2D04DCBB0086A0EA /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				D9B202442D04E2B40086A0EA /* SplashRepositories.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +428,11 @@
 				Base,
 			);
 			mainGroup = D91A59A52C96F07400F194F3;
+			packageReferences = (
+				D9B2021B2D04B63F0086A0EA /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				D9B2021C2D04B6480086A0EA /* XCRemoteSwiftPackageReference "SnapKit" */,
+				D9B2021D2D04B6570086A0EA /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = D91A59AF2C96F07400F194F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -332,6 +452,7 @@
 				D91A59BE2C96F07600F194F3 /* LaunchScreen.storyboard in Resources */,
 				D91A59BB2C96F07600F194F3 /* Assets.xcassets in Resources */,
 				D91A59B92C96F07400F194F3 /* Main.storyboard in Resources */,
+				D9B202372D04DB9B0086A0EA /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,23 +477,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9B2022C2D04BB010086A0EA /* CustomExtensions.swift in Sources */,
+				D9B202182D04B5BD0086A0EA /* NetworkManager.swift in Sources */,
+				D9B202432D04DFAE0086A0EA /* CreateWalletRequestModel.swift in Sources */,
 				D91A59E52C97081400F194F3 /* Coordinator.swift in Sources */,
+				D9B2023F2D04DECA0086A0EA /* SplashEndpoints.swift in Sources */,
+				D9B202352D04DB280086A0EA /* StoryboardNames.swift in Sources */,
 				D91A59B22C96F07400F194F3 /* AppDelegate.swift in Sources */,
 				D91A59E92C9709E700F194F3 /* TabbarViewController.swift in Sources */,
 				D91A59FC2C970BAD00F194F3 /* ScanViewController.swift in Sources */,
+				D9B202412D04DF340086A0EA /* ImportWalletRequestModel.swift in Sources */,
 				D91A59F82C970B9300F194F3 /* SwapViewModel.swift in Sources */,
 				D91A59F22C970B5A00F194F3 /* WalletViewModel.swift in Sources */,
 				D91A5A092C9717F400F194F3 /* UIColor.swift in Sources */,
 				D91A59FA2C970B9E00F194F3 /* SwapCoordinator.swift in Sources */,
+				D9B202332D04D52A0086A0EA /* SplashViewModel.swift in Sources */,
 				D91A59FE2C970BB700F194F3 /* ScanViewModel.swift in Sources */,
+				D9B202312D04D52A0086A0EA /* SplashCoordinator.swift in Sources */,
+				D9B202452D04E2B40086A0EA /* SplashRepositories.swift in Sources */,
 				D91A5A002C970BC400F194F3 /* ScanCoordinator.swift in Sources */,
 				D91A5A062C970BF800F194F3 /* SettingsCoordinator.swift in Sources */,
 				D91A5A022C970BD600F194F3 /* SettingsViewController.swift in Sources */,
 				D91A59E32C96FF5600F194F3 /* Storyboarded.swift in Sources */,
+				D9B202282D04B8AA0086A0EA /* NetworkConfig.swift in Sources */,
+				D9B202262D04B7F80086A0EA /* Endpoint.swift in Sources */,
 				D91A59F62C970B8800F194F3 /* SwapViewController.swift in Sources */,
+				D9B2021A2D04B6160086A0EA /* NetworkProtocols.swift in Sources */,
 				D91A59F02C970B4D00F194F3 /* WalletViewController.swift in Sources */,
 				D91A5A042C970BE900F194F3 /* SettingsViewModel.swift in Sources */,
 				D91A59F42C970B6500F194F3 /* WalletCoordinator.swift in Sources */,
+				D9B202322D04D52A0086A0EA /* SplashViewController.swift in Sources */,
+				D9B2023D2D04DDEF0086A0EA /* SplashNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -719,6 +854,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D9B2021B2D04B63F0086A0EA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.1.2;
+			};
+		};
+		D9B2021C2D04B6480086A0EA /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		D9B2021D2D04B6570086A0EA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D9B2021F2D04B6680086A0EA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9B2021D2D04B6570086A0EA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		D9B202212D04B66D0086A0EA /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9B2021C2D04B6480086A0EA /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		D9B202232D04B6720086A0EA /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9B2021B2D04B63F0086A0EA /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D91A59A62C96F07400F194F3 /* Project object */;
 }
