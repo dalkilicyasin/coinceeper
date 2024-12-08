@@ -47,7 +47,10 @@
 		D9B2023F2D04DECA0086A0EA /* SplashEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2023E2D04DECA0086A0EA /* SplashEndpoints.swift */; };
 		D9B202412D04DF340086A0EA /* ImportWalletRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202402D04DF340086A0EA /* ImportWalletRequestModel.swift */; };
 		D9B202432D04DFAE0086A0EA /* CreateWalletRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202422D04DFAE0086A0EA /* CreateWalletRequestModel.swift */; };
-		D9B202452D04E2B40086A0EA /* SplashRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202442D04E2B40086A0EA /* SplashRepositories.swift */; };
+		D9B202452D04E2B40086A0EA /* SplashRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202442D04E2B40086A0EA /* SplashRepository.swift */; };
+		D9B202472D05944C0086A0EA /* WalletResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202462D05944C0086A0EA /* WalletResponseModel.swift */; };
+		D9B202492D05C1F00086A0EA /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202482D05C1F00086A0EA /* NetworkError.swift */; };
+		D9B2024B2D05C2530086A0EA /* AnyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2024A2D05C2530086A0EA /* AnyCodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,7 +112,10 @@
 		D9B2023E2D04DECA0086A0EA /* SplashEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashEndpoints.swift; sourceTree = "<group>"; };
 		D9B202402D04DF340086A0EA /* ImportWalletRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportWalletRequestModel.swift; sourceTree = "<group>"; };
 		D9B202422D04DFAE0086A0EA /* CreateWalletRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletRequestModel.swift; sourceTree = "<group>"; };
-		D9B202442D04E2B40086A0EA /* SplashRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRepositories.swift; sourceTree = "<group>"; };
+		D9B202442D04E2B40086A0EA /* SplashRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRepository.swift; sourceTree = "<group>"; };
+		D9B202462D05944C0086A0EA /* WalletResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletResponseModel.swift; sourceTree = "<group>"; };
+		D9B202482D05C1F00086A0EA /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		D9B2024A2D05C2530086A0EA /* AnyCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCodable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +283,7 @@
 				D9B202192D04B6160086A0EA /* NetworkProtocols.swift */,
 				D9B202252D04B7F80086A0EA /* Endpoint.swift */,
 				D9B202272D04B8AA0086A0EA /* NetworkConfig.swift */,
+				D9B202482D05C1F00086A0EA /* NetworkError.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -328,6 +335,8 @@
 			children = (
 				D9B202402D04DF340086A0EA /* ImportWalletRequestModel.swift */,
 				D9B202422D04DFAE0086A0EA /* CreateWalletRequestModel.swift */,
+				D9B202462D05944C0086A0EA /* WalletResponseModel.swift */,
+				D9B2024A2D05C2530086A0EA /* AnyCodable.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -335,7 +344,7 @@
 		D9B2023B2D04DCBB0086A0EA /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				D9B202442D04E2B40086A0EA /* SplashRepositories.swift */,
+				D9B202442D04E2B40086A0EA /* SplashRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -484,7 +493,9 @@
 				D9B2023F2D04DECA0086A0EA /* SplashEndpoints.swift in Sources */,
 				D9B202352D04DB280086A0EA /* StoryboardNames.swift in Sources */,
 				D91A59B22C96F07400F194F3 /* AppDelegate.swift in Sources */,
+				D9B202472D05944C0086A0EA /* WalletResponseModel.swift in Sources */,
 				D91A59E92C9709E700F194F3 /* TabbarViewController.swift in Sources */,
+				D9B202492D05C1F00086A0EA /* NetworkError.swift in Sources */,
 				D91A59FC2C970BAD00F194F3 /* ScanViewController.swift in Sources */,
 				D9B202412D04DF340086A0EA /* ImportWalletRequestModel.swift in Sources */,
 				D91A59F82C970B9300F194F3 /* SwapViewModel.swift in Sources */,
@@ -492,9 +503,10 @@
 				D91A5A092C9717F400F194F3 /* UIColor.swift in Sources */,
 				D91A59FA2C970B9E00F194F3 /* SwapCoordinator.swift in Sources */,
 				D9B202332D04D52A0086A0EA /* SplashViewModel.swift in Sources */,
+				D9B2024B2D05C2530086A0EA /* AnyCodable.swift in Sources */,
 				D91A59FE2C970BB700F194F3 /* ScanViewModel.swift in Sources */,
 				D9B202312D04D52A0086A0EA /* SplashCoordinator.swift in Sources */,
-				D9B202452D04E2B40086A0EA /* SplashRepositories.swift in Sources */,
+				D9B202452D04E2B40086A0EA /* SplashRepository.swift in Sources */,
 				D91A5A002C970BC400F194F3 /* ScanCoordinator.swift in Sources */,
 				D91A5A062C970BF800F194F3 /* SettingsCoordinator.swift in Sources */,
 				D91A5A022C970BD600F194F3 /* SettingsViewController.swift in Sources */,

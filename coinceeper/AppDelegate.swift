@@ -24,8 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Coordinator init
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.splashCoordinator = SplashCoordinator(navigationController: UINavigationController(), networkManager: networkManager)
-        self.window?.rootViewController = SplashViewController()
+        self.splashCoordinator = SplashCoordinator(navigationController: UINavigationController(), networkManager: networkManager, window: self.window ?? UIWindow())
+        self.splashCoordinator?.start()
         self.window?.makeKeyAndVisible()
         
         return true

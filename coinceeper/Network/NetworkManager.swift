@@ -18,7 +18,6 @@ class NetworkManager: NetworkService {
     
     func request<T: Codable>(_ endpoint: Endpoint, type: T.Type, method: Alamofire.HTTPMethod, completion: @escaping (Result<T, AFError>) -> Void){
         
-        
         guard var urlRequest = self.urlRequest(with: endpoint) else {
             completion(.failure(.invalidURL(url: URL(string: "\(endpoint.path)")!)))
             return
@@ -90,7 +89,6 @@ class NetworkManager: NetworkService {
             let afError = AFError.responseSerializationFailed(reason: .decodingFailed(error: error))
             completion(.failure(afError))
         }
-        
     }
 }
 

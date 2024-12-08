@@ -30,7 +30,7 @@ class ScanCoordinator: Coordinator {
         self.navigationController.setViewControllers([controller], animated: false)
     }
     
-    func navigateTo(to route: ScanRoute, data: Any?) {
+    func navigateTo(to route: ScanRoute, with data: Any?) {
         //TODO: willl add child coordinator
     }
 }

@@ -30,7 +30,7 @@ class SwapCoordinator: Coordinator {
         self.navigationController.setViewControllers([controller], animated: false)
     }
     
-    func navigateTo(to route: SwapRoute, data: Any?) {
+    func navigateTo(to route: SwapRoute, with data: Any?) {
         // TODO: will add navigate
     }
     

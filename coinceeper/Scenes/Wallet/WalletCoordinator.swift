@@ -31,7 +31,7 @@ class WalletCoordinator: Coordinator {
         self.navigationController.setViewControllers([controller], animated: false)
     }
     
-    func navigateTo(to route: WalletRoute, data: Any?) {
+    func navigateTo(to route: WalletRoute, with data: Any?) {
         // TODO: will add navigate
     }
     

@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+class SplashViewModel {
+    
+    private let splashRepository: SplashRepository
+    
+    init(splashRepository: SplashRepository) {
+        self.splashRepository = splashRepository
+    }
+}

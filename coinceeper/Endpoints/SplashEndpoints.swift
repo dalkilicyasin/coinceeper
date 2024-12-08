@@ -19,7 +19,7 @@ struct SplashEndpoints {
         return Endpoint(path: "", bodyParameters: bodyParams) //TODO: will add path
     }
     
-    func createWallet(body: CreateWalletRequestModel) -> Endpoint {
+   static func createWallet(body: CreateWalletRequestModel) -> Endpoint {
         let bodyParams: [String: String] = [
             "userName ":"\(body.userName ?? "")",
             "password ":"\(body.password ?? "")",

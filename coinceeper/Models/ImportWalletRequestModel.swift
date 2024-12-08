@@ -13,8 +13,5 @@ struct ImportWalletRequestModel: Codable {
     var walletName: String?
     var passwordHash: String?
     
-    init ()
-    {
-    
-    }
+    init() {}
 }

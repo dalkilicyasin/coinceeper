@@ -30,7 +30,7 @@ class SettingsCoordinator: Coordinator {
         self.navigationController.setViewControllers([controller], animated: false)
     }
     
-    func navigateTo(to route: SettingsRoute, data: Any?) {
+    func navigateTo(to route: SettingsRoute, with data: Any?) {
         //
     }
     

@@ -15,8 +15,5 @@ struct CreateWalletRequestModel {
     var requiredSignatures: String?
     var referallCode: String?
     
-    init ()
-    {
-    
-    }
+    init () {}
 }
