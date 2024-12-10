@@ -16,19 +16,16 @@ struct SplashEndpoints {
             "passwordHash ":"\(body.passwordHash ?? "")"
         ]
         
-        return Endpoint(path: "", bodyParameters: bodyParams) //TODO: will add path
+        return Endpoint(path: "import-wallet", bodyParameters: bodyParams) //TODO: will add path
     }
     
    static func createWallet(body: CreateWalletRequestModel) -> Endpoint {
-        let bodyParams: [String: String] = [
-            "userName ":"\(body.userName ?? "")",
-            "password ":"\(body.password ?? "")",
-            "walletName ":"\(body.walletName ?? "")",
-            "ismultiSig ":"\(body.ismultiSig ?? false)",
-            "requiredSignatures ":"\(body.requiredSignatures ?? "")",
-            "referallCode ":"\(body.referallCode ?? "")"
+       let headerParams: [String: String] = ["content-type": "application/json"]
+       let bodyParams: [String: String] = [
+            "Password":"\(body.Password ?? "")",
+            "WalletName":"\(body.WalletName ?? "")"
         ]
         
-        return Endpoint(path: "", bodyParameters: bodyParams) //TODO: will add path
+       return Endpoint(path: "generate-wallet", headerParameters: headerParams, bodyParameters: bodyParams) //TODO: will add path
     }
 }

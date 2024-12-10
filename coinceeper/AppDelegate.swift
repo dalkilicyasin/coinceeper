@@ -11,7 +11,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private lazy var networkManager: NetworkManager = {
-            let config = NetworkConfig(baseURL: URL(string: "https://ydkulgwkxfxrkghcsdsk.supabase.co")!)
+            let config = NetworkConfig(baseURL: URL(string: "http://165.232.149.249:5000")!)
             return NetworkManager(config: config)
         }()
     

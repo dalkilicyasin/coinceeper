@@ -9,7 +9,10 @@ import Foundation
 import UIKit
 
 enum SplashRoute {
-    case toTabView
+    case importWallet
+    case createWallet
+    case toTabController
+    
 }
 
 class SplashCoordinator: Coordinator {
@@ -41,14 +44,24 @@ class SplashCoordinator: Coordinator {
         let controller = SplashViewController.instantiate(name: .splash)
         controller.coordinator = self
         controller.splashViewModel = self.splashViewModel
-        self.window.rootViewController = controller
-        self.navigationController.setViewControllers([controller], animated: false)
+        self.navigationController.viewControllers = [controller]
+        self.window.rootViewController = self.navigationController
+        self.window.makeKeyAndVisible()
     }
     
     func navigateTo(to route: SplashRoute, with data: Any?) {
         
         switch route {
-        case .toTabView:
+        case .importWallet:
+            return
+          // TODO: will direction to do importScreen
+        case .createWallet:
+            let coordinator = CreateWalletCoordinator(navigationController: self.navigationController, networkManager: self.networkManager)
+            self.childCoordinators.append(coordinator)
+            coordinator.start()
+    
+            // TODO: will direction to do createScreen
+        case .toTabController:
             let controller = TabbarViewController(networkManager: self.networkManager)
             self.window.rootViewController = controller
             self.window.makeKeyAndVisible()

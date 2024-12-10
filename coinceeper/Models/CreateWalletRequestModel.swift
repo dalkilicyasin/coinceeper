@@ -8,12 +8,8 @@
 import Foundation
 
 struct CreateWalletRequestModel {
-    var userName: String?
-    var password: String?
-    var walletName: String?
-    var ismultiSig: Bool?
-    var requiredSignatures: String?
-    var referallCode: String?
+    var Password: String?
+    var WalletName: String?
     
     init () {}
 }

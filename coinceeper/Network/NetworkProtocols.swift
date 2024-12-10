@@ -34,5 +34,5 @@ private extension Encodable {
 
 
 protocol NetworkService {
-    func request<T: Codable>(_ endpoint: Endpoint, type: T.Type, method: HTTPMethod, completion: @escaping (Result<T, AFError>) -> Void)
+    func request<T: Codable>(_ endpoint: Endpoint, type: T.Type, method: HTTPMethod, completion: @escaping (Result<T, NetworkError>) -> Void)
 }

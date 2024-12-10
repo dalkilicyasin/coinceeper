@@ -26,12 +26,15 @@ class SplashViewController: UIViewController, Storyboarded {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        navigationItem.title = "Settings"
     }
     
-    @IBAction func didTapButton(_ sender: Any) {
-        self.coordinator?.removeAllChildCoordinators()
-        self.coordinator?.navigateTo(to:.toTabView , with: nil)
+    
+    @IBAction func didTapImportWalletButton(_ sender: Any) {
+        
+    }
+    
+    @IBAction func didTapCreateWalletButton(_ sender: Any) {
+        self.coordinator?.navigateTo(to: .createWallet, with: nil)
     }
     
 }

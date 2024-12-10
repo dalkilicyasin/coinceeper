@@ -51,6 +51,15 @@
 		D9B202472D05944C0086A0EA /* WalletResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202462D05944C0086A0EA /* WalletResponseModel.swift */; };
 		D9B202492D05C1F00086A0EA /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202482D05C1F00086A0EA /* NetworkError.swift */; };
 		D9B2024B2D05C2530086A0EA /* AnyCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2024A2D05C2530086A0EA /* AnyCodable.swift */; };
+		D9B2024E2D0899C10086A0EA /* ImportWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2024D2D0899C10086A0EA /* ImportWalletViewController.swift */; };
+		D9B202502D0899D20086A0EA /* ImportWalletCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2024F2D0899D20086A0EA /* ImportWalletCoordinator.swift */; };
+		D9B202522D089A030086A0EA /* ImportWalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202512D089A030086A0EA /* ImportWalletViewModel.swift */; };
+		D9B202572D089AF70086A0EA /* CreateWalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202562D089AF70086A0EA /* CreateWalletViewModel.swift */; };
+		D9B202582D089AF70086A0EA /* CreateWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202542D089AF70086A0EA /* CreateWalletViewController.swift */; };
+		D9B202592D089AF70086A0EA /* CreateWalletCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202552D089AF70086A0EA /* CreateWalletCoordinator.swift */; };
+		D9B2025B2D089B300086A0EA /* CreateWallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9B2025A2D089B300086A0EA /* CreateWallet.storyboard */; };
+		D9B2025D2D089B500086A0EA /* ImportWallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9B2025C2D089B500086A0EA /* ImportWallet.storyboard */; };
+		D9B202602D089CA40086A0EA /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2025F2D089CA40086A0EA /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +125,15 @@
 		D9B202462D05944C0086A0EA /* WalletResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletResponseModel.swift; sourceTree = "<group>"; };
 		D9B202482D05C1F00086A0EA /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		D9B2024A2D05C2530086A0EA /* AnyCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCodable.swift; sourceTree = "<group>"; };
+		D9B2024D2D0899C10086A0EA /* ImportWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportWalletViewController.swift; sourceTree = "<group>"; };
+		D9B2024F2D0899D20086A0EA /* ImportWalletCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportWalletCoordinator.swift; sourceTree = "<group>"; };
+		D9B202512D089A030086A0EA /* ImportWalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportWalletViewModel.swift; sourceTree = "<group>"; };
+		D9B202542D089AF70086A0EA /* CreateWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletViewController.swift; sourceTree = "<group>"; };
+		D9B202552D089AF70086A0EA /* CreateWalletCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletCoordinator.swift; sourceTree = "<group>"; };
+		D9B202562D089AF70086A0EA /* CreateWalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletViewModel.swift; sourceTree = "<group>"; };
+		D9B2025A2D089B300086A0EA /* CreateWallet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateWallet.storyboard; sourceTree = "<group>"; };
+		D9B2025C2D089B500086A0EA /* ImportWallet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImportWallet.storyboard; sourceTree = "<group>"; };
+		D9B2025F2D089CA40086A0EA /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +188,7 @@
 		D91A59B02C96F07400F194F3 /* coinceeper */ = {
 			isa = PBXGroup;
 			children = (
+				D9B2025E2D089C970086A0EA /* CutomViews */,
 				D9B202382D04DCA20086A0EA /* NetworkServices */,
 				D9B2023B2D04DCBB0086A0EA /* Repositories */,
 				D9B2023A2D04DCB20086A0EA /* Models */,
@@ -219,6 +238,8 @@
 		D91A59EA2C970B0F00F194F3 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				D9B202532D089AE80086A0EA /* CreateWallet */,
+				D9B2024C2D0899860086A0EA /* ImportWallet */,
 				D9B202302D04D52A0086A0EA /* Splash */,
 				D91A59EE2C970B3E00F194F3 /* Settings */,
 				D91A59ED2C970B3000F194F3 /* Scan */,
@@ -349,6 +370,36 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		D9B2024C2D0899860086A0EA /* ImportWallet */ = {
+			isa = PBXGroup;
+			children = (
+				D9B2024D2D0899C10086A0EA /* ImportWalletViewController.swift */,
+				D9B2024F2D0899D20086A0EA /* ImportWalletCoordinator.swift */,
+				D9B202512D089A030086A0EA /* ImportWalletViewModel.swift */,
+				D9B2025C2D089B500086A0EA /* ImportWallet.storyboard */,
+			);
+			path = ImportWallet;
+			sourceTree = "<group>";
+		};
+		D9B202532D089AE80086A0EA /* CreateWallet */ = {
+			isa = PBXGroup;
+			children = (
+				D9B202542D089AF70086A0EA /* CreateWalletViewController.swift */,
+				D9B202562D089AF70086A0EA /* CreateWalletViewModel.swift */,
+				D9B202552D089AF70086A0EA /* CreateWalletCoordinator.swift */,
+				D9B2025A2D089B300086A0EA /* CreateWallet.storyboard */,
+			);
+			path = CreateWallet;
+			sourceTree = "<group>";
+		};
+		D9B2025E2D089C970086A0EA /* CutomViews */ = {
+			isa = PBXGroup;
+			children = (
+				D9B2025F2D089CA40086A0EA /* CustomButton.swift */,
+			);
+			path = CutomViews;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -462,6 +513,8 @@
 				D91A59BB2C96F07600F194F3 /* Assets.xcassets in Resources */,
 				D91A59B92C96F07400F194F3 /* Main.storyboard in Resources */,
 				D9B202372D04DB9B0086A0EA /* Splash.storyboard in Resources */,
+				D9B2025D2D089B500086A0EA /* ImportWallet.storyboard in Resources */,
+				D9B2025B2D089B300086A0EA /* CreateWallet.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,21 +543,27 @@
 				D9B202182D04B5BD0086A0EA /* NetworkManager.swift in Sources */,
 				D9B202432D04DFAE0086A0EA /* CreateWalletRequestModel.swift in Sources */,
 				D91A59E52C97081400F194F3 /* Coordinator.swift in Sources */,
+				D9B202572D089AF70086A0EA /* CreateWalletViewModel.swift in Sources */,
+				D9B202582D089AF70086A0EA /* CreateWalletViewController.swift in Sources */,
+				D9B202592D089AF70086A0EA /* CreateWalletCoordinator.swift in Sources */,
 				D9B2023F2D04DECA0086A0EA /* SplashEndpoints.swift in Sources */,
 				D9B202352D04DB280086A0EA /* StoryboardNames.swift in Sources */,
 				D91A59B22C96F07400F194F3 /* AppDelegate.swift in Sources */,
 				D9B202472D05944C0086A0EA /* WalletResponseModel.swift in Sources */,
 				D91A59E92C9709E700F194F3 /* TabbarViewController.swift in Sources */,
 				D9B202492D05C1F00086A0EA /* NetworkError.swift in Sources */,
+				D9B2024E2D0899C10086A0EA /* ImportWalletViewController.swift in Sources */,
 				D91A59FC2C970BAD00F194F3 /* ScanViewController.swift in Sources */,
 				D9B202412D04DF340086A0EA /* ImportWalletRequestModel.swift in Sources */,
 				D91A59F82C970B9300F194F3 /* SwapViewModel.swift in Sources */,
 				D91A59F22C970B5A00F194F3 /* WalletViewModel.swift in Sources */,
+				D9B202602D089CA40086A0EA /* CustomButton.swift in Sources */,
 				D91A5A092C9717F400F194F3 /* UIColor.swift in Sources */,
 				D91A59FA2C970B9E00F194F3 /* SwapCoordinator.swift in Sources */,
 				D9B202332D04D52A0086A0EA /* SplashViewModel.swift in Sources */,
 				D9B2024B2D05C2530086A0EA /* AnyCodable.swift in Sources */,
 				D91A59FE2C970BB700F194F3 /* ScanViewModel.swift in Sources */,
+				D9B202502D0899D20086A0EA /* ImportWalletCoordinator.swift in Sources */,
 				D9B202312D04D52A0086A0EA /* SplashCoordinator.swift in Sources */,
 				D9B202452D04E2B40086A0EA /* SplashRepository.swift in Sources */,
 				D91A5A002C970BC400F194F3 /* ScanCoordinator.swift in Sources */,
@@ -519,6 +578,7 @@
 				D91A5A042C970BE900F194F3 /* SettingsViewModel.swift in Sources */,
 				D91A59F42C970B6500F194F3 /* WalletCoordinator.swift in Sources */,
 				D9B202322D04D52A0086A0EA /* SplashViewController.swift in Sources */,
+				D9B202522D089A030086A0EA /* ImportWalletViewModel.swift in Sources */,
 				D9B2023D2D04DDEF0086A0EA /* SplashNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -706,7 +766,7 @@
 				INFOPLIST_FILE = coinceeper/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Splash;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -734,7 +794,7 @@
 				INFOPLIST_FILE = coinceeper/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Splash;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
