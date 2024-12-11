@@ -17,10 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1hT-HN-IXe">
-                                <rect key="frame" x="68" y="381" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1hT-HN-IXe">
+                                <rect key="frame" x="20" y="329" width="353" height="300"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="lM5-f8-pjF"/>
+                                </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="I1l-hd-Pih">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -29,7 +31,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ULt-8R-mUM">
-                                        <rect key="frame" x="56" y="0.0" width="128" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="C5v-Z0-0uv">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -67,8 +69,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Igm-S5-ZBk" secondAttribute="trailing" constant="20" id="GC6-ev-3vd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1hT-HN-IXe" secondAttribute="trailing" constant="20" id="GZg-xd-wjc"/>
                             <constraint firstItem="Igm-S5-ZBk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Pow-QZ-Wfk"/>
                             <constraint firstItem="Igm-S5-ZBk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="eWV-Jv-uqM"/>
+                            <constraint firstItem="1hT-HN-IXe" firstAttribute="top" secondItem="Igm-S5-ZBk" secondAttribute="bottom" constant="100" id="myo-pa-GrE"/>
+                            <constraint firstItem="1hT-HN-IXe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="xTV-zC-Ncy"/>
                         </constraints>
                     </view>
                     <connections>
