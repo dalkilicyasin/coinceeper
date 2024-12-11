@@ -9,6 +9,9 @@ import UIKit
 
 class CreateWalletViewController: UIViewController, Storyboarded {
     
+    //MARK: - IBOutlets
+    @IBOutlet weak var walletNameTextField: CustomUITextField!
+    
     var createWalletViewModel: CreateWalletViewModel?
     var coordinator: CreateWalletCoordinator?
     
@@ -26,7 +29,7 @@ class CreateWalletViewController: UIViewController, Storyboarded {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        navigationItem.title = "Create Wallet"
+        
     }
     
     @IBAction func createWalletButtonTapped(_ sender: Any) {
