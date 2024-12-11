@@ -11,6 +11,9 @@ class CreateWalletViewController: UIViewController, Storyboarded {
     
     //MARK: - IBOutlets
     @IBOutlet weak var walletNameTextField: CustomUITextField!
+    @IBOutlet weak var newPasswordTextField: CustomUITextField!
+    @IBOutlet weak var confirmPasswordTextField: CustomUITextField!
+    
     
     var createWalletViewModel: CreateWalletViewModel?
     var coordinator: CreateWalletCoordinator?
@@ -27,14 +30,22 @@ class CreateWalletViewController: UIViewController, Storyboarded {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.createWalletViewModel?.delegate = self
+        self.prepareViews()
+    }
+    
+    func prepareViews() {
+        
+        self.walletNameTextField.textPlaceHolder = "Wallet Name"
+        self.newPasswordTextField.textPlaceHolder = "New Password"
+        self.confirmPasswordTextField.textPlaceHolder = "Confirm Password"
+        
         
     }
     
     @IBAction func createWalletButtonTapped(_ sender: Any) {
-        self.createWalletViewModel?.createWalletRequestModel.Password = "1234512345112141"
-        self.createWalletViewModel?.createWalletRequestModel.WalletName = "mohammad"
+        self.createWalletViewModel?.createWalletRequestModel.Password = self.newPasswordTextField.textField.text
+        self.createWalletViewModel?.createWalletRequestModel.WalletName = self.walletNameTextField.textField.text
         
         self.createWalletViewModel?.createWallet()
     }

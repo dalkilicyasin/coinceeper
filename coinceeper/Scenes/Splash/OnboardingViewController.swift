@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SplashViewController: UIViewController, Storyboarded {
+class OnboardingViewController: UIViewController, Storyboarded {
     
     var splashViewModel: SplashViewModel?
     var coordinator: SplashCoordinator?

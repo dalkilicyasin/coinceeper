@@ -14,7 +14,7 @@ class CustomUITextField: UIView {
     @IBOutlet weak var textFieldMainStackView: UIStackView!
     @IBOutlet weak var textRightImageView: UIImageView!
     @IBOutlet weak var textMiddleImageView: UIImageView!
-    @IBOutlet weak var textBottomInfoLabel: UILabel!
+    @IBOutlet weak var textBottomInfoLabel: UILabel! // TODO: will asign dont forget
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -36,9 +36,9 @@ class CustomUITextField: UIView {
         }
     }
     
-    var textPlaceHolderText: String = "" {
+    var textPlaceHolder: String = "" {
         didSet {
-            self.textField.placeholder = self.textPlaceHolderText
+            self.textField.placeholder = self.textPlaceHolder
         }
     }
     
@@ -84,6 +84,7 @@ class CustomUITextField: UIView {
         self.textFieldMainStackView.layer.borderColor = borderColor.cgColor
         self.textFieldMainStackView.layer.borderWidth = 1
         self.textField.text = self.textTitle
+        self.textFieldMainStackView.layer.cornerRadius = self.cornerRadius
     }
     
     func commonInit() {
@@ -92,7 +93,6 @@ class CustomUITextField: UIView {
         view.frame = self.bounds
         self.addSubview(view)
     }
-    
 }
 
 

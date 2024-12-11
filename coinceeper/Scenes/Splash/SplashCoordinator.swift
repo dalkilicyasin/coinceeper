@@ -41,7 +41,7 @@ class SplashCoordinator: Coordinator {
     var childCoordinators: [any Coordinator] = []
     
     func start() {
-        let controller = SplashViewController.instantiate(name: .splash)
+        let controller = OnboardingViewController.instantiate(name: .splash)
         controller.coordinator = self
         controller.splashViewModel = self.splashViewModel
         self.navigationController.viewControllers = [controller]

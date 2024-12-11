@@ -41,10 +41,10 @@
 		D9B202282D04B8AA0086A0EA /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202272D04B8AA0086A0EA /* NetworkConfig.swift */; };
 		D9B2022C2D04BB010086A0EA /* CustomExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2022B2D04BB010086A0EA /* CustomExtensions.swift */; };
 		D9B202312D04D52A0086A0EA /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2022F2D04D52A0086A0EA /* SplashCoordinator.swift */; };
-		D9B202322D04D52A0086A0EA /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2022D2D04D52A0086A0EA /* SplashViewController.swift */; };
+		D9B202322D04D52A0086A0EA /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2022D2D04D52A0086A0EA /* OnboardingViewController.swift */; };
 		D9B202332D04D52A0086A0EA /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2022E2D04D52A0086A0EA /* SplashViewModel.swift */; };
 		D9B202352D04DB280086A0EA /* StoryboardNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202342D04DB280086A0EA /* StoryboardNames.swift */; };
-		D9B202372D04DB9B0086A0EA /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9B202362D04DB9B0086A0EA /* Splash.storyboard */; };
+		D9B202372D04DB9B0086A0EA /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9B202362D04DB9B0086A0EA /* Onboarding.storyboard */; };
 		D9B2023D2D04DDEF0086A0EA /* SplashNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2023C2D04DDEF0086A0EA /* SplashNetworkService.swift */; };
 		D9B2023F2D04DECA0086A0EA /* SplashEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2023E2D04DECA0086A0EA /* SplashEndpoints.swift */; };
 		D9B202412D04DF340086A0EA /* ImportWalletRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202402D04DF340086A0EA /* ImportWalletRequestModel.swift */; };
@@ -116,11 +116,11 @@
 		D9B202252D04B7F80086A0EA /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		D9B202272D04B8AA0086A0EA /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 		D9B2022B2D04BB010086A0EA /* CustomExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomExtensions.swift; sourceTree = "<group>"; };
-		D9B2022D2D04D52A0086A0EA /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		D9B2022D2D04D52A0086A0EA /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		D9B2022E2D04D52A0086A0EA /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		D9B2022F2D04D52A0086A0EA /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
 		D9B202342D04DB280086A0EA /* StoryboardNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardNames.swift; sourceTree = "<group>"; };
-		D9B202362D04DB9B0086A0EA /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		D9B202362D04DB9B0086A0EA /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		D9B2023C2D04DDEF0086A0EA /* SplashNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashNetworkService.swift; sourceTree = "<group>"; };
 		D9B2023E2D04DECA0086A0EA /* SplashEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashEndpoints.swift; sourceTree = "<group>"; };
 		D9B202402D04DF340086A0EA /* ImportWalletRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportWalletRequestModel.swift; sourceTree = "<group>"; };
@@ -242,8 +242,7 @@
 		D91A59EA2C970B0F00F194F3 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				D9B202532D089AE80086A0EA /* CreateWallet */,
-				D9B2024C2D0899860086A0EA /* ImportWallet */,
+				D9D52BE32D0A0E0D00D9E2D7 /* Onboarding */,
 				D9B202302D04D52A0086A0EA /* Splash */,
 				D91A59EE2C970B3E00F194F3 /* Settings */,
 				D91A59ED2C970B3000F194F3 /* Scan */,
@@ -331,10 +330,10 @@
 		D9B202302D04D52A0086A0EA /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				D9B2022D2D04D52A0086A0EA /* SplashViewController.swift */,
+				D9B2022D2D04D52A0086A0EA /* OnboardingViewController.swift */,
 				D9B2022E2D04D52A0086A0EA /* SplashViewModel.swift */,
 				D9B2022F2D04D52A0086A0EA /* SplashCoordinator.swift */,
-				D9B202362D04DB9B0086A0EA /* Splash.storyboard */,
+				D9B202362D04DB9B0086A0EA /* Onboarding.storyboard */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -404,6 +403,23 @@
 				D920339D2D09614300544FAA /* CustomUITextField.xib */,
 			);
 			path = CutomViews;
+			sourceTree = "<group>";
+		};
+		D9D52BE32D0A0E0D00D9E2D7 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				D9D52BE42D0A0FF800D9E2D7 /* PassCode */,
+				D9B202532D089AE80086A0EA /* CreateWallet */,
+				D9B2024C2D0899860086A0EA /* ImportWallet */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		D9D52BE42D0A0FF800D9E2D7 /* PassCode */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PassCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -519,7 +535,7 @@
 				D91A59BB2C96F07600F194F3 /* Assets.xcassets in Resources */,
 				D91A59B92C96F07400F194F3 /* Main.storyboard in Resources */,
 				D920339E2D09614300544FAA /* CustomUITextField.xib in Resources */,
-				D9B202372D04DB9B0086A0EA /* Splash.storyboard in Resources */,
+				D9B202372D04DB9B0086A0EA /* Onboarding.storyboard in Resources */,
 				D9B2025D2D089B500086A0EA /* ImportWallet.storyboard in Resources */,
 				D9B2025B2D089B300086A0EA /* CreateWallet.storyboard in Resources */,
 			);
@@ -585,7 +601,7 @@
 				D91A59F02C970B4D00F194F3 /* WalletViewController.swift in Sources */,
 				D91A5A042C970BE900F194F3 /* SettingsViewModel.swift in Sources */,
 				D91A59F42C970B6500F194F3 /* WalletCoordinator.swift in Sources */,
-				D9B202322D04D52A0086A0EA /* SplashViewController.swift in Sources */,
+				D9B202322D04D52A0086A0EA /* OnboardingViewController.swift in Sources */,
 				D9B202522D089A030086A0EA /* ImportWalletViewModel.swift in Sources */,
 				D9B2023D2D04DDEF0086A0EA /* SplashNetworkService.swift in Sources */,
 			);
@@ -774,7 +790,7 @@
 				INFOPLIST_FILE = coinceeper/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Splash;
+				INFOPLIST_KEY_UIMainStoryboardFile = Onboarding;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -802,7 +818,7 @@
 				INFOPLIST_FILE = coinceeper/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Splash;
+				INFOPLIST_KEY_UIMainStoryboardFile = Onboarding;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
