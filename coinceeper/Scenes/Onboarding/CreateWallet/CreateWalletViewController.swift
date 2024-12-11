@@ -14,7 +14,6 @@ class CreateWalletViewController: UIViewController, Storyboarded {
     @IBOutlet weak var newPasswordTextField: CustomUITextField!
     @IBOutlet weak var confirmPasswordTextField: CustomUITextField!
     
-    
     var createWalletViewModel: CreateWalletViewModel?
     var coordinator: CreateWalletCoordinator?
     

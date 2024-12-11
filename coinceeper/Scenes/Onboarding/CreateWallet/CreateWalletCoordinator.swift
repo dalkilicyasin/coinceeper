@@ -45,8 +45,9 @@ class CreateWalletCoordinator: Coordinator {
     func navigateTo(to route: T, with data: Any?) {
         switch route {
         case .toPassCodePage:
-            return
-            // TODO: will add pascodePage
+            let coordinator = PassCodeCoordinator(navigationController: self.navigationController, networkManager: self.networkManager)
+            self.childCoordinators.append(coordinator)
+            coordinator.start()
         }
     }
 }

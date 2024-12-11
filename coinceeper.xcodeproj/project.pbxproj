@@ -62,6 +62,12 @@
 		D9B2025B2D089B300086A0EA /* CreateWallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9B2025A2D089B300086A0EA /* CreateWallet.storyboard */; };
 		D9B2025D2D089B500086A0EA /* ImportWallet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9B2025C2D089B500086A0EA /* ImportWallet.storyboard */; };
 		D9B202602D089CA40086A0EA /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B2025F2D089CA40086A0EA /* CustomButton.swift */; };
+		D9D52BE62D0A113F00D9E2D7 /* PassCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D52BE52D0A113F00D9E2D7 /* PassCodeViewController.swift */; };
+		D9D52BE82D0A114E00D9E2D7 /* PassCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D52BE72D0A114E00D9E2D7 /* PassCodeViewModel.swift */; };
+		D9D52BEA2D0A11A500D9E2D7 /* PassCodeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D52BE92D0A11A500D9E2D7 /* PassCodeCoordinator.swift */; };
+		D9D52BEC2D0A11B100D9E2D7 /* PassCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D52BEB2D0A11B100D9E2D7 /* PassCode.storyboard */; };
+		D9D52BEE2D0A16FF00D9E2D7 /* CustomCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D52BED2D0A16FF00D9E2D7 /* CustomCircleView.swift */; };
+		D9D52BF02D0A183600D9E2D7 /* CustomCircleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9D52BEF2D0A183600D9E2D7 /* CustomCircleView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +144,12 @@
 		D9B2025A2D089B300086A0EA /* CreateWallet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateWallet.storyboard; sourceTree = "<group>"; };
 		D9B2025C2D089B500086A0EA /* ImportWallet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImportWallet.storyboard; sourceTree = "<group>"; };
 		D9B2025F2D089CA40086A0EA /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		D9D52BE52D0A113F00D9E2D7 /* PassCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassCodeViewController.swift; sourceTree = "<group>"; };
+		D9D52BE72D0A114E00D9E2D7 /* PassCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassCodeViewModel.swift; sourceTree = "<group>"; };
+		D9D52BE92D0A11A500D9E2D7 /* PassCodeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassCodeCoordinator.swift; sourceTree = "<group>"; };
+		D9D52BEB2D0A11B100D9E2D7 /* PassCode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PassCode.storyboard; sourceTree = "<group>"; };
+		D9D52BED2D0A16FF00D9E2D7 /* CustomCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircleView.swift; sourceTree = "<group>"; };
+		D9D52BEF2D0A183600D9E2D7 /* CustomCircleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCircleView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -401,6 +413,8 @@
 				D9B2025F2D089CA40086A0EA /* CustomButton.swift */,
 				D92033992D0960D900544FAA /* CustomUITextField.swift */,
 				D920339D2D09614300544FAA /* CustomUITextField.xib */,
+				D9D52BED2D0A16FF00D9E2D7 /* CustomCircleView.swift */,
+				D9D52BEF2D0A183600D9E2D7 /* CustomCircleView.xib */,
 			);
 			path = CutomViews;
 			sourceTree = "<group>";
@@ -418,6 +432,10 @@
 		D9D52BE42D0A0FF800D9E2D7 /* PassCode */ = {
 			isa = PBXGroup;
 			children = (
+				D9D52BE52D0A113F00D9E2D7 /* PassCodeViewController.swift */,
+				D9D52BE72D0A114E00D9E2D7 /* PassCodeViewModel.swift */,
+				D9D52BE92D0A11A500D9E2D7 /* PassCodeCoordinator.swift */,
+				D9D52BEB2D0A11B100D9E2D7 /* PassCode.storyboard */,
 			);
 			path = PassCode;
 			sourceTree = "<group>";
@@ -535,6 +553,8 @@
 				D91A59BB2C96F07600F194F3 /* Assets.xcassets in Resources */,
 				D91A59B92C96F07400F194F3 /* Main.storyboard in Resources */,
 				D920339E2D09614300544FAA /* CustomUITextField.xib in Resources */,
+				D9D52BF02D0A183600D9E2D7 /* CustomCircleView.xib in Resources */,
+				D9D52BEC2D0A11B100D9E2D7 /* PassCode.storyboard in Resources */,
 				D9B202372D04DB9B0086A0EA /* Onboarding.storyboard in Resources */,
 				D9B2025D2D089B500086A0EA /* ImportWallet.storyboard in Resources */,
 				D9B2025B2D089B300086A0EA /* CreateWallet.storyboard in Resources */,
@@ -565,7 +585,9 @@
 				D9B2022C2D04BB010086A0EA /* CustomExtensions.swift in Sources */,
 				D9B202182D04B5BD0086A0EA /* NetworkManager.swift in Sources */,
 				D9B202432D04DFAE0086A0EA /* CreateWalletRequestModel.swift in Sources */,
+				D9D52BEE2D0A16FF00D9E2D7 /* CustomCircleView.swift in Sources */,
 				D91A59E52C97081400F194F3 /* Coordinator.swift in Sources */,
+				D9D52BEA2D0A11A500D9E2D7 /* PassCodeCoordinator.swift in Sources */,
 				D920339A2D0960D900544FAA /* CustomUITextField.swift in Sources */,
 				D9B202572D089AF70086A0EA /* CreateWalletViewModel.swift in Sources */,
 				D9B202582D089AF70086A0EA /* CreateWalletViewController.swift in Sources */,
@@ -581,6 +603,7 @@
 				D9B202412D04DF340086A0EA /* ImportWalletRequestModel.swift in Sources */,
 				D91A59F82C970B9300F194F3 /* SwapViewModel.swift in Sources */,
 				D91A59F22C970B5A00F194F3 /* WalletViewModel.swift in Sources */,
+				D9D52BE62D0A113F00D9E2D7 /* PassCodeViewController.swift in Sources */,
 				D9B202602D089CA40086A0EA /* CustomButton.swift in Sources */,
 				D91A5A092C9717F400F194F3 /* UIColor.swift in Sources */,
 				D91A59FA2C970B9E00F194F3 /* SwapCoordinator.swift in Sources */,
@@ -593,6 +616,7 @@
 				D91A5A002C970BC400F194F3 /* ScanCoordinator.swift in Sources */,
 				D91A5A062C970BF800F194F3 /* SettingsCoordinator.swift in Sources */,
 				D91A5A022C970BD600F194F3 /* SettingsViewController.swift in Sources */,
+				D9D52BE82D0A114E00D9E2D7 /* PassCodeViewModel.swift in Sources */,
 				D91A59E32C96FF5600F194F3 /* Storyboarded.swift in Sources */,
 				D9B202282D04B8AA0086A0EA /* NetworkConfig.swift in Sources */,
 				D9B202262D04B7F80086A0EA /* Endpoint.swift in Sources */,

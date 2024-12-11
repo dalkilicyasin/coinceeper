@@ -11,4 +11,5 @@ public enum StoryboardNames: String {
     case main = "Main"
     case splash = "Onboarding"
     case createWallet = "CreateWallet"
+    case passCode = "PassCode"
 }
