@@ -8,7 +8,8 @@
 import UIKit
 
 class PassCodeViewController: UIViewController, Storyboarded {
-    @IBOutlet weak var customCircleView: CustomCircleView!
+    @IBOutlet weak var passCodeCollectionView: UICollectionView!
+    @IBOutlet weak var passCodeTableView: UITableView!
     
     var passCodeViewModel: PassCodeViewModel?
     var coordinator: PassCodeCoordinator?
@@ -27,7 +28,7 @@ class PassCodeViewController: UIViewController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.passCodeCollectionView.register(PassCodeCollectionViewCell.nib(), forCellWithReuseIdentifier: PassCodeCollectionViewCell.identifier)
     }
 
 }
