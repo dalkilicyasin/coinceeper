@@ -34,11 +34,9 @@ class CreateWalletViewController: UIViewController, Storyboarded {
     }
     
     func prepareViews() {
-        
         self.walletNameTextField.textPlaceHolder = "Wallet Name"
         self.newPasswordTextField.textPlaceHolder = "New Password"
         self.confirmPasswordTextField.textPlaceHolder = "Confirm Password"
-        
         
     }
     

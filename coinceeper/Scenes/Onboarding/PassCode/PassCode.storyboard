@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,27 +19,33 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yhN-74-8Hr">
                                 <rect key="frame" x="10" y="109" width="373" height="100"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="R1u-Ib-Vav"/>
                                 </constraints>
                             </tableView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1hT-HN-IXe">
-                                <rect key="frame" x="20" y="329" width="353" height="300"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="lM5-f8-pjF"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="I1l-hd-Pih">
-                                    <size key="itemSize" width="128" height="128"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1EU-L6-rbg">
+                                <rect key="frame" x="10" y="309" width="373" height="493"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="5" id="LUC-UG-vpo">
+                                    <size key="itemSize" width="200" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
                                 </collectionViewFlowLayout>
-                                <cells/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="FKF-PW-TlT">
+                                        <rect key="frame" x="86.666666666666671" y="10" width="200" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5ha-VL-8Uh">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="ImH-OH-bvx"/>
-                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="wHm-wr-2MG"/>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="6wE-iq-EUA"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="jUX-Hg-N2E"/>
                                 </connections>
                             </collectionView>
                         </subviews>
@@ -46,13 +53,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="yhN-74-8Hr" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="1c9-DQ-1h0"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1hT-HN-IXe" secondAttribute="trailing" constant="20" id="GZg-xd-wjc"/>
+                            <constraint firstAttribute="bottom" secondItem="1EU-L6-rbg" secondAttribute="bottom" constant="50" id="489-zn-HDs"/>
+                            <constraint firstAttribute="trailing" secondItem="1EU-L6-rbg" secondAttribute="trailing" constant="10" id="4RZ-p0-NEd"/>
+                            <constraint firstItem="1EU-L6-rbg" firstAttribute="top" secondItem="yhN-74-8Hr" secondAttribute="bottom" constant="100" id="9dL-HO-dBA"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yhN-74-8Hr" secondAttribute="trailing" constant="10" id="QkV-pH-gPY"/>
-                            <constraint firstItem="1hT-HN-IXe" firstAttribute="top" secondItem="yhN-74-8Hr" secondAttribute="bottom" constant="120" id="aUZ-tk-ksQ"/>
+                            <constraint firstItem="1EU-L6-rbg" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="10" id="hDT-l1-UWn"/>
                             <constraint firstItem="yhN-74-8Hr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="tHq-Fu-EJB"/>
-                            <constraint firstItem="1hT-HN-IXe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="xTV-zC-Ncy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="passCodeCollectionView" destination="1EU-L6-rbg" id="RcZ-b4-aK5"/>
+                        <outlet property="passCodeTableView" destination="yhN-74-8Hr" id="uWT-Tq-7ZN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,6 +74,12 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

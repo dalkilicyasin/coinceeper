@@ -19,15 +19,17 @@ class PassCodeCollectionViewCell: UICollectionViewCell {
         passcodeButton.isHidden = true
     }
     
-    func configure(with index: Int, passcodeModel: PasscodeModel?) {
-        self.passCodeLabel.text = String(index)
-        if let passcodeModel, index > 8 {
-            DispatchQueue.main.async {
-                self.passcodeButton.setImage(UIImage(named: "\(passcodeModel.imageName ?? "")"), for: .normal)
-            }
-            self.passCodeLabel.isHidden = true
-            self.passcodeButton.isHidden = false
+    func configure(_ index: Int, passcodeModel: PasscodeModel?) {
+       
+        guard let passcodeModel, index > 8, index != 10  else {
+            return  self.passCodeLabel.text = String(passcodeModel?.number ?? 0)
         }
+        
+        DispatchQueue.main.async {
+            self.passcodeButton.setImage(UIImage(named: "\(passcodeModel.imageName ?? "")"), for: .normal)
+        }
+        self.passCodeLabel.isHidden = true
+        self.passcodeButton.isHidden = false
     }
     
     static func nib() -> UINib {

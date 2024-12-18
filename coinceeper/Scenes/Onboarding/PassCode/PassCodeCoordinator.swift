@@ -40,7 +40,7 @@ class PassCodeCoordinator: Coordinator {
             let controller = PassCodeViewController.instantiate(name: .passCode)
             controller.coordinator = self
             controller.passCodeViewModel = self.passCodeViewModel
-            controller.modalPresentationStyle = .fullScreen
+           // controller.modalPresentationStyle = .fullScreen
             self.navigationController.present(controller, animated: true)
         }
     }
