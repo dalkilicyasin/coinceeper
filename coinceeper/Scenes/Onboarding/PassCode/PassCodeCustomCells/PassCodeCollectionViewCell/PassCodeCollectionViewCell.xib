@@ -20,8 +20,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="367" height="281"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQy-1e-Gh1">
-                                <rect key="frame" x="20" y="20" width="327" height="241"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <rect key="frame" x="0.0" y="0.0" width="367" height="281"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -34,12 +34,12 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="eh1-jr-Hse" secondAttribute="trailing" id="Hbd-Ze-rq4"/>
                             <constraint firstItem="eh1-jr-Hse" firstAttribute="leading" secondItem="t4z-Y4-f66" secondAttribute="leading" id="Hj6-Ng-0hn"/>
-                            <constraint firstAttribute="trailing" secondItem="NQy-1e-Gh1" secondAttribute="trailing" constant="20" id="OGr-gi-uiF"/>
-                            <constraint firstItem="NQy-1e-Gh1" firstAttribute="leading" secondItem="t4z-Y4-f66" secondAttribute="leading" constant="20" id="n3n-AE-VeG"/>
+                            <constraint firstAttribute="trailing" secondItem="NQy-1e-Gh1" secondAttribute="trailing" id="OGr-gi-uiF"/>
+                            <constraint firstItem="NQy-1e-Gh1" firstAttribute="leading" secondItem="t4z-Y4-f66" secondAttribute="leading" id="n3n-AE-VeG"/>
                             <constraint firstItem="eh1-jr-Hse" firstAttribute="top" secondItem="t4z-Y4-f66" secondAttribute="top" id="o8L-6P-0hw"/>
                             <constraint firstAttribute="bottom" secondItem="eh1-jr-Hse" secondAttribute="bottom" id="pUa-cL-Yct"/>
-                            <constraint firstItem="NQy-1e-Gh1" firstAttribute="top" secondItem="t4z-Y4-f66" secondAttribute="top" constant="20" id="tlF-pN-yu9"/>
-                            <constraint firstAttribute="bottom" secondItem="NQy-1e-Gh1" secondAttribute="bottom" constant="20" id="z9X-mI-XdR"/>
+                            <constraint firstItem="NQy-1e-Gh1" firstAttribute="top" secondItem="t4z-Y4-f66" secondAttribute="top" id="tlF-pN-yu9"/>
+                            <constraint firstAttribute="bottom" secondItem="NQy-1e-Gh1" secondAttribute="bottom" id="z9X-mI-XdR"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -54,6 +54,7 @@
             <size key="customSize" width="367" height="281"/>
             <connections>
                 <outlet property="passCodeLabel" destination="NQy-1e-Gh1" id="mG1-qW-ruq"/>
+                <outlet property="passCodeMainView" destination="t4z-Y4-f66" id="ftI-4m-pBa"/>
                 <outlet property="passcodeButton" destination="eh1-jr-Hse" id="sty-aR-lgJ"/>
             </connections>
             <point key="canvasLocation" x="336.64122137404581" y="101.7605633802817"/>

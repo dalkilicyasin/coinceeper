@@ -34,7 +34,7 @@ class PassCodeViewModel {
                 passCodeModel.number = 0
                 self.passCodeModelList.append(passCodeModel)
             case 11 :
-                passCodeModel.imageName = "scan"
+                passCodeModel.imageName = "delete-left-icon"
                 self.passCodeModelList.append(passCodeModel)
             default :
                 break

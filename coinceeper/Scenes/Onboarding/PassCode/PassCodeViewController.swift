@@ -36,7 +36,7 @@ class PassCodeViewController: UIViewController, Storyboarded {
         
         //collectionView register
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 100, height: 80)
+        layout.itemSize = CGSize(width: 80, height: 80)
         self.passCodeCollectionView.collectionViewLayout = layout
     }
 }
@@ -57,12 +57,20 @@ extension PassCodeViewController: UICollectionViewDelegateFlowLayout, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 100, height: 80)
+        return CGSize(width: 80, height: 80)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 10, left: 5, bottom: 5, right: 5)
+        return UIEdgeInsets(top: 50, left: 20, bottom: 10, right: 20)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+           return 20
+       }
+       
+       func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+           return 10
+       }
 }
 
 extension PassCodeViewController: PassCodeViewModelDelegate {

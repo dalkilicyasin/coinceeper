@@ -10,6 +10,7 @@ import UIKit
 class PassCodeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var passCodeLabel: UILabel!
     @IBOutlet weak var passcodeButton: UIButton!
+    @IBOutlet weak var passCodeMainView: UIView!
     
     static let identifier: String = "PassCodeCollectionViewCell"
 
@@ -17,6 +18,8 @@ class PassCodeCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
         passcodeButton.isHidden = true
+        
+        self.passCodeMainView.layer.cornerRadius = 40
     }
     
     func configure(_ index: Int, passcodeModel: PasscodeModel?) {
