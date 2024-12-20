@@ -32,11 +32,11 @@
 		D91A5A092C9717F400F194F3 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91A5A082C9717F400F194F3 /* UIColor.swift */; };
 		D920339A2D0960D900544FAA /* CustomUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92033992D0960D900544FAA /* CustomUITextField.swift */; };
 		D920339E2D09614300544FAA /* CustomUITextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = D920339D2D09614300544FAA /* CustomUITextField.xib */; };
-		D96AF0932D113CEC004B3545 /* PassCodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96AF0912D113CEC004B3545 /* PassCodeTableViewCell.swift */; };
-		D96AF0942D113CEC004B3545 /* PassCodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96AF0922D113CEC004B3545 /* PassCodeTableViewCell.xib */; };
 		D96AF0972D113D02004B3545 /* PassCodeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96AF0952D113D02004B3545 /* PassCodeCollectionViewCell.swift */; };
 		D96AF0982D113D02004B3545 /* PassCodeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D96AF0962D113D02004B3545 /* PassCodeCollectionViewCell.xib */; };
 		D96AF09A2D11461F004B3545 /* PasscodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96AF0992D11461F004B3545 /* PasscodeModel.swift */; };
+		D9B156052D13ED3A002C669D /* PassCodeCircleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9B156042D13ED3A002C669D /* PassCodeCircleCollectionViewCell.xib */; };
+		D9B156062D13ED3A002C669D /* PassCodeCircleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B156032D13ED3A002C669D /* PassCodeCircleCollectionViewCell.swift */; };
 		D9B202182D04B5BD0086A0EA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202172D04B5BD0086A0EA /* NetworkManager.swift */; };
 		D9B2021A2D04B6160086A0EA /* NetworkProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B202192D04B6160086A0EA /* NetworkProtocols.swift */; };
 		D9B202202D04B6680086A0EA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D9B2021F2D04B6680086A0EA /* Alamofire */; };
@@ -122,11 +122,11 @@
 		D91A5A082C9717F400F194F3 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		D92033992D0960D900544FAA /* CustomUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITextField.swift; sourceTree = "<group>"; };
 		D920339D2D09614300544FAA /* CustomUITextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomUITextField.xib; sourceTree = "<group>"; };
-		D96AF0912D113CEC004B3545 /* PassCodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassCodeTableViewCell.swift; sourceTree = "<group>"; };
-		D96AF0922D113CEC004B3545 /* PassCodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PassCodeTableViewCell.xib; sourceTree = "<group>"; };
 		D96AF0952D113D02004B3545 /* PassCodeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassCodeCollectionViewCell.swift; sourceTree = "<group>"; };
 		D96AF0962D113D02004B3545 /* PassCodeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PassCodeCollectionViewCell.xib; sourceTree = "<group>"; };
 		D96AF0992D11461F004B3545 /* PasscodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeModel.swift; sourceTree = "<group>"; };
+		D9B156032D13ED3A002C669D /* PassCodeCircleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassCodeCircleCollectionViewCell.swift; sourceTree = "<group>"; };
+		D9B156042D13ED3A002C669D /* PassCodeCircleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PassCodeCircleCollectionViewCell.xib; sourceTree = "<group>"; };
 		D9B202172D04B5BD0086A0EA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D9B202192D04B6160086A0EA /* NetworkProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocols.swift; sourceTree = "<group>"; };
 		D9B202252D04B7F80086A0EA /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
@@ -325,7 +325,7 @@
 		D96AF08A2D10764F004B3545 /* PassCodeCustomCells */ = {
 			isa = PBXGroup;
 			children = (
-				D96AF08C2D10768F004B3545 /* PassCodeTableViewCell */,
+				D9B156022D13ED0A002C669D /* PassCodeCircleCollectionView */,
 				D96AF08B2D107678004B3545 /* PassCodeCollectionViewCell */,
 			);
 			path = PassCodeCustomCells;
@@ -340,13 +340,13 @@
 			path = PassCodeCollectionViewCell;
 			sourceTree = "<group>";
 		};
-		D96AF08C2D10768F004B3545 /* PassCodeTableViewCell */ = {
+		D9B156022D13ED0A002C669D /* PassCodeCircleCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				D96AF0912D113CEC004B3545 /* PassCodeTableViewCell.swift */,
-				D96AF0922D113CEC004B3545 /* PassCodeTableViewCell.xib */,
+				D9B156032D13ED3A002C669D /* PassCodeCircleCollectionViewCell.swift */,
+				D9B156042D13ED3A002C669D /* PassCodeCircleCollectionViewCell.xib */,
 			);
-			path = PassCodeTableViewCell;
+			path = PassCodeCircleCollectionView;
 			sourceTree = "<group>";
 		};
 		D9B202162D04B5840086A0EA /* Network */ = {
@@ -595,8 +595,8 @@
 				D9D52BF02D0A183600D9E2D7 /* CustomCircleView.xib in Resources */,
 				D9D52BEC2D0A11B100D9E2D7 /* PassCode.storyboard in Resources */,
 				D96AF0982D113D02004B3545 /* PassCodeCollectionViewCell.xib in Resources */,
+				D9B156052D13ED3A002C669D /* PassCodeCircleCollectionViewCell.xib in Resources */,
 				D9B202372D04DB9B0086A0EA /* Onboarding.storyboard in Resources */,
-				D96AF0942D113CEC004B3545 /* PassCodeTableViewCell.xib in Resources */,
 				D9B2025D2D089B500086A0EA /* ImportWallet.storyboard in Resources */,
 				D9B2025B2D089B300086A0EA /* CreateWallet.storyboard in Resources */,
 			);
@@ -645,7 +645,6 @@
 				D9B202412D04DF340086A0EA /* ImportWalletRequestModel.swift in Sources */,
 				D91A59F82C970B9300F194F3 /* SwapViewModel.swift in Sources */,
 				D91A59F22C970B5A00F194F3 /* WalletViewModel.swift in Sources */,
-				D96AF0932D113CEC004B3545 /* PassCodeTableViewCell.swift in Sources */,
 				D9D52BE62D0A113F00D9E2D7 /* PassCodeViewController.swift in Sources */,
 				D9B202602D089CA40086A0EA /* CustomButton.swift in Sources */,
 				D91A5A092C9717F400F194F3 /* UIColor.swift in Sources */,
@@ -657,6 +656,7 @@
 				D9B202312D04D52A0086A0EA /* SplashCoordinator.swift in Sources */,
 				D9B202452D04E2B40086A0EA /* SplashRepository.swift in Sources */,
 				D91A5A002C970BC400F194F3 /* ScanCoordinator.swift in Sources */,
+				D9B156062D13ED3A002C669D /* PassCodeCircleCollectionViewCell.swift in Sources */,
 				D91A5A062C970BF800F194F3 /* SettingsCoordinator.swift in Sources */,
 				D91A5A022C970BD600F194F3 /* SettingsViewController.swift in Sources */,
 				D9D52BE82D0A114E00D9E2D7 /* PassCodeViewModel.swift in Sources */,
