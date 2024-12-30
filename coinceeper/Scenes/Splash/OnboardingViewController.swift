@@ -9,6 +9,8 @@ import UIKit
 
 class OnboardingViewController: UIViewController, Storyboarded {
     
+    @IBOutlet weak var gradientMainLabel: UILabel!
+    
     var splashViewModel: SplashViewModel?
     var coordinator: SplashCoordinator?
     
@@ -24,8 +26,9 @@ class OnboardingViewController: UIViewController, Storyboarded {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let gradientColors = [UIColor(hexString: "#3C9548"), UIColor(hexString: "#BAD1FA"),UIColor(hexString: "#3C9548")]
+        let gradient = UIColor.getGradientLayer(bounds: self.gradientMainLabel.bounds, colors: gradientColors)
+        self.gradientMainLabel.textColor = UIColor.gradientColor(bounds: self.gradientMainLabel.bounds, gradientLayer: gradient)
     }
     
     

@@ -27,7 +27,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="GWI-5Q-eaK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -85,6 +85,9 @@
                             <constraint firstItem="ZeQ-If-lQl" firstAttribute="top" secondItem="Mkj-CC-rYt" secondAttribute="bottom" constant="50" id="v75-b6-PkA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="gradientMainLabel" destination="Y6x-qT-XbO" id="8oQ-SR-Vsa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
